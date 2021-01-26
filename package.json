@@ -1,0 +1,31 @@
+{
+  "name": "explorer-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll",
+    "unit:test": "jest --watchAll --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "babel-polyfill": "^6.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-runtime": "7.9.6",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.7.4",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4"
+  }
+}
